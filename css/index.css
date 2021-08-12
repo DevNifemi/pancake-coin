@@ -38,7 +38,7 @@ ul>li{
 .banner{
     background-image: url(../img/planet-backgroundnew.png);
     width: 100%;
-    height: 100vh;
+    height: 700px;
     background-size: cover;
     background-position: center;
 }
@@ -51,10 +51,10 @@ nav{
     color: #A3FF2A;
     top: 50%;
     height: 50rem;
-    left: 50%;
     margin-top: -5em;
     margin-left: -25rem;
     display: block;
+    left: 50%;
     width: 50rem;
     text-align: center;
 }
@@ -63,13 +63,14 @@ nav{
     font-style: normal;
     margin-bottom: 20px;
     font-weight: bold;
-    text-align: center;
+    text-align: center !important;
     line-height: 1.05em;
 }
 
 
 .efficient-usage{
     background: #2D1F50;
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2);
 }
 .usage-container{
     background-image: url(../img//slidenewtoday.jpg);
@@ -92,13 +93,19 @@ nav{
     position: relative;
     overflow: hidden;
     margin-top: 70px;
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2);
 }
 .card p{
     margin-bottom: 20px;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 18px;
 }
 .card h6{
     margin-bottom: 7px;
-    font-size: 18px;
+    font-size: 22px;
+    text-align: center;
+    color: rgb(0, 169, 211);
 }
 .card .label{
     width: 100%;
@@ -109,7 +116,8 @@ nav{
     font-size: 18px;
     text-align: center;
     color: #000;
-    padding: 5px;
+    padding: 7px 5px;
+    font-weight: bold;
 }
 
 
@@ -123,11 +131,11 @@ nav{
 }
 .activities-content{
     display: grid;
-    justify-content: flex-end;
+    justify-content:  center;
+    margin-left:200px;
     flex-direction: column;
     align-items: center;
     padding-top: 70px;
-    width: 71%;
 }
 .activities-content li{
     font-size: 22px;
@@ -166,7 +174,6 @@ nav{
     display: block;
     padding-top: 100px;
     height: 100%;
-    width: 70%;
 }
 .sales-content h1{
     font-size: 4em;
@@ -213,8 +220,6 @@ nav{
     flex-direction: column;
     align-items: center;
     padding-top: 70px;
-    width: 92%;
-    overflow: hidden;
     margin-left: 100px;
 }
 .presale-content h1{
@@ -240,7 +245,7 @@ footer{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    /* margin-top: 60px; */
+    /* visibility: hidden; */
     background-image: url(../img/610d9fe9e53d9937db3d1339_Main_Page_Ill.png);
     position: absolute;
     min-height: 200px; 
@@ -274,7 +279,20 @@ footer p{
 
 
 /* media queries  */
-@media screen and (max-width: 600px){
+@media screen and (max-width: 700px){
+    .intro{
+        position: absolute;
+        z-index: 1;
+        color: #A3FF2A;
+        top: 50%;
+        left: 0px;
+        height: 0rem;
+        margin-top: -5em;
+        margin-left: 0rem;
+        display: block;
+        width: 25rem;
+        text-align: center;
+    }
     .intro h1{
         font-size: 2rem;
         margin-bottom: 20px;
@@ -283,16 +301,15 @@ footer p{
         line-break: strict;
         line-height: 1.05em;
     }
-    .usage-container{
-        height: 700px;
-        width: 100%;
-    }
     .efficient-usage{
         background: #2D1F50;
     }
+    .usage-container{
+        height: fit-content;
+        padding-bottom: 4em;
+    }
     .card-container{
         display: grid;
-        width: 100%;
         place-items: center !important;
     }
     .card{
@@ -302,6 +319,9 @@ footer p{
         color: #fff;
         position: relative;
         overflow: hidden;
+    }
+    .two{
+        margin-top: 40px;
     }
     .card .label{
         width: 100%;
@@ -314,16 +334,13 @@ footer p{
         color: #000;
         padding: 5px;
     }
-    .what-we-do-container{
-        height: 550px;
-    }
     .activities-content{
         display: grid;
-        justify-content: flex-end;
+        justify-content: center;
         flex-direction: column;
         align-items: center;
         padding-top: 70px;
-        width: 85%;
+        margin-left: 10px;
     }
     .activities-content li{
         font-size: 22px;
@@ -331,27 +348,14 @@ footer p{
         display: flex;
         align-items: center;
     }
-    .action-icon{
-        padding: .9em;
-        width: 4px;
-        height: 4px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: -5px;
-        margin-right: 10px;
-        border-radius: 50%;
-        background: rgb(230, 163, 38);
-    }
     .action-icon i{
         font-size: 18px;
-    }.sales-container{
+    }
+    .sales-container{
         background-image: url(../img/marscat.jpg);
-        height: 600px;
+        height: fit-content;
         width: 100%;
         color: #fff;
-        background-position: center;
-        background-size: cover;
         position: relative;
     }
     .sales-content{
@@ -378,9 +382,8 @@ footer p{
         flex-direction: column;
         align-items: center;
         padding-top: 70px;
-        width: 80%;
         overflow: hidden;
-        margin-left: 100px;
+        /* margin-left: 100px; */
     }
     .presale-content h1{
         font-size: 2em;
