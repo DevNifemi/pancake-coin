@@ -186,7 +186,6 @@ nav{
     font-size: 18px;
     margin-top: 20px;
     display: flex;
-    /* justify-content: center; */
     align-items: center;
 }
 .sale-icon{
@@ -281,28 +280,19 @@ footer p{
 /* media queries  */
 @media screen and (max-width: 700px){
     .intro{
-        position: absolute;
-        z-index: 1;
-        color: #A3FF2A;
         top: 50%;
         left: 0px;
-        height: 0rem;
-        margin-top: -5em;
-        margin-left: 0rem;
         display: block;
-        width: 25rem;
+        margin: 0 auto;
+        width: 90%;
         text-align: center;
     }
     .intro h1{
-        font-size: 2rem;
-        margin-bottom: 20px;
+        font-size: 4rem;
+        margin-left: 50px;
         font-weight: bold;
         text-align: center;
-        line-break: strict;
         line-height: 1.05em;
-    }
-    .efficient-usage{
-        background: #2D1F50;
     }
     .usage-container{
         height: fit-content;
@@ -313,38 +303,22 @@ footer p{
         place-items: center !important;
     }
     .card{
-        padding: 1.5em;
         width: 90% !important;
         height: 16em;
-        color: #fff;
-        position: relative;
-        overflow: hidden;
     }
     .two{
         margin-top: 40px;
     }
     .card .label{
-        width: 100%;
-        position: absolute;
-        background-color: #FCA400;
-        bottom: 0;
-        left: 0;
-        font-size: 18px;
-        text-align: center;
-        color: #000;
         padding: 5px;
     }
     .activities-content{
-        display: grid;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        padding-top: 70px;
         margin-left: 10px;
     }
     .activities-content li{
         font-size: 22px;
         margin-top: 20px;
+        width: 90%;
         display: flex;
         align-items: center;
     }
@@ -359,39 +333,38 @@ footer p{
         position: relative;
     }
     .sales-content{
-        padding: 3em;
+        padding: 1em;
         display: block;
+        margin: 0 auto;
+        align-items: center;
         padding-top: 100px;
-        height: 100%;
-        width: 70%;
+        padding-bottom: 100px;
+        width: 90%;
     }
     .sales-content h1{
-        font-size: 2em;
-        line-height: 40px;
+        font-size: 3em;
+        line-height: 45px;
     }
     .sales-details{
         margin-top: 50px;
     }
     /* pre sales styling goes here  */
     .presale-container{
-        height: 600px;
+        height: 700px;
     }
     .presale-content{
-        display: grid;
-        justify-content: flex-end;
-        flex-direction: column;
-        align-items: center;
-        padding-top: 70px;
-        overflow: hidden;
-        /* margin-left: 100px; */
+        display: block;
+        margin: 0 auto;
+        width: 90%;
+        padding-top: 100px;
     }
     .presale-content h1{
-        font-size: 2em;
+        font-size: 3em;
         margin-left: 30px;
     }
     .presale-content li{
         margin-top: 30px;
         margin-left: 30px;
-        font-size: 19.5px;
+        font-size: 20px;
     }
 }
