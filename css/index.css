@@ -359,6 +359,9 @@ header{
     .twitter-link{
         justify-content: center;
     }
+    .nav-icon{
+        margin-left: 0;
+    }
     .intro{
         top: 50%;
         left: 0px;
@@ -368,7 +371,7 @@ header{
         text-align: center;
     }
     .intro h1{
-        font-size: 4rem;
+        font-size: 2rem;
         margin-left: 50px;
         font-weight: bold;
         text-align: center;
@@ -422,7 +425,7 @@ header{
         width: 90%;
     }
     .sales-content h1{
-        font-size: 3.1em;
+        font-size: 2.3em;
         width: 100%;
         line-height: 47px;
     }
